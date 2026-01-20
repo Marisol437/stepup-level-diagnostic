@@ -1,4 +1,4 @@
-function Test() {
+function Test({ onFinish }) {
   return (
     <main>
       <h1>Diagnóstico de nivel</h1>
@@ -15,7 +15,9 @@ function Test() {
         </ul>
       </div>
 
-      <button type="button">Siguiente</button>
+      <button type="button" onClick={onFinish}>
+        Finalizar (demo)
+      </button>
     </main>
   );
 }
