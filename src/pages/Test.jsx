@@ -1,17 +1,21 @@
+import questions from "../data/questionBank.es.json";
+
 function Test({ onFinish }) {
+  const currentIndex = 0;
+  const q = questions[currentIndex];
+
   return (
     <main>
       <h1>Diagnóstico de nivel</h1>
-      <p>Pregunta 1 de 20</p>
+      <p>Pregunta {currentIndex + 1} de {questions.length}</p>
 
       <div>
-        <p><strong>Aquí irá la pregunta.</strong></p>
+        <p><strong>{q.prompt}</strong></p>
 
         <ul>
-          <li>Opción A</li>
-          <li>Opción B</li>
-          <li>Opción C</li>
-          <li>Opción D</li>
+          {q.options.map((opt, idx) => (
+            <li key={idx}>{opt}</li>
+          ))}
         </ul>
       </div>
 
