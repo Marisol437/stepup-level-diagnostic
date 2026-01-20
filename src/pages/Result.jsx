@@ -1,4 +1,4 @@
-function Result() {
+function Result({ onRestart }) {
   return (
     <main>
       <h1>Resultado</h1>
@@ -9,7 +9,9 @@ function Result() {
         el diagnóstico completo o continuar con la recomendación.
       </p>
 
-      <button type="button">Volver al inicio</button>
+      <button type="button" onClick={onRestart}>
+        Volver al inicio
+      </button>
     </main>
   );
 }
