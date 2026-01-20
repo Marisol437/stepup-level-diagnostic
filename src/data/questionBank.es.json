@@ -1,1 +1,20 @@
-
+[
+  {
+    "id": "G-A1-001",
+    "skill": "grammar",
+    "level": "A1",
+    "prompt": "Choose the correct option: I ___ a student.",
+    "options": ["am", "is", "are", "be"],
+    "correctIndex": 0,
+    "explanation": "Use 'am' with 'I' in the verb 'to be'."
+  },
+  {
+    "id": "G-A1-002",
+    "skill": "grammar",
+    "level": "A1",
+    "prompt": "Choose the correct option: She ___ from Colombia.",
+    "options": ["am", "is", "are", "be"],
+    "correctIndex": 1,
+    "explanation": "Use 'is' with he/she/it in the verb 'to be'."
+  }
+]
