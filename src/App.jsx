@@ -1,10 +1,15 @@
+import { useState } from "react";
+import Home from "./pages/Home.jsx";
+import Test from "./pages/Test.jsx";
+
 function App() {
-  return (
-    <main>
-      <h1>Step Up – Level Diagnostic</h1>
-      <p>Proyecto en construcción.</p>
-    </main>
-  );
+  const [screen, setScreen] = useState("home");
+
+  if (screen === "test") {
+    return <Test />;
+  }
+
+  return <Home onStart={() => setScreen("test")} />;
 }
 
 export default App;
