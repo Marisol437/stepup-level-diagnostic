@@ -1,4 +1,4 @@
-function Home() {
+function Home({ onStart }) {
   return (
     <main>
       <h1>Step Up – Diagnóstico de nivel</h1>
@@ -7,7 +7,9 @@ function Home() {
         siguiente paso más eficiente.
       </p>
 
-      <button type="button">Iniciar diagnóstico</button>
+      <button type="button" onClick={onStart}>
+        Iniciar diagnóstico
+      </button>
     </main>
   );
 }
